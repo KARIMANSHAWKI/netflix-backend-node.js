@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.Schema = new ListSchema(
+const ListSchema = new mongoose.Schema(
   {
     title: { type: String, required: true, unique: true },
     type: { type: String },

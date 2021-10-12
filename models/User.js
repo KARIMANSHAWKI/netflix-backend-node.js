@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-mongoose.Schema = new UserSchema({
+const UserSchema= new mongoose.Schema({
     username: {type: String, required: true, unique: true},
     email: {type: String, required: true, unique: true},
     password: {type: String, required: true},
-    profilePic = {type: String, default: ''},
-    IsAdmin = {type: Boolean, default: false}, 
+    profilePic : {type: String, default: " "},
+    IsAdmin : {type: Boolean, default: false}, 
 }, {timestamps: true});
 
 
